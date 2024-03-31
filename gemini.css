@@ -1,0 +1,133 @@
+.article {
+  padding: 40px 60px;
+}
+h1 {
+  display: none;
+}
+.images {
+  width: 340px;
+  position: relative;
+}
+.images #main-img {
+  aspect-ratio: 5/7;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.images .image-group {
+  display: flex;
+  gap: 6px;
+  overflow-x: scroll;
+  margin-top: 2px;
+}
+.images .image-group .small-image {
+  cursor: pointer;
+  width: 81.3px;
+  aspect-ratio: 5/7;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.images .image-group::-webkit-scrollbar {
+  width: 0;
+}
+.images a {
+  background: var(--color4);
+  border: none;
+  position: absolute;
+  right: -15px;
+  bottom: 20px;
+  height: 116px;
+  width: 12px;
+  border-radius: 3px;
+  font-size: 18px;
+  color: var(--color7);
+  line-height: 116px;
+  padding-left: 2px;
+}
+.artcle {
+  display: flex;
+  padding: 80px 80px 0 80px;
+}
+.prt2 {
+  margin-left: 43px;
+}
+.prt3 {
+  padding: 0 80px;
+}
+.prt2 h2 {
+  color: var(--color9);
+  font-weight: 500;
+  text-align: left;
+  font-size: 34px;
+  margin: 20px 0 30px 20px;
+}
+.prt3 p,
+.prt2 p {
+  color: var(--color7);
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.review {
+  background: var(--color3);
+  margin: 20px 80px;
+  display: flex;
+  padding: 23px;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+.review .like,
+.review .author {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.review .author span {
+  font-size: 18px;
+}
+.review .author img {
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.review .like {
+  color: var(--color7);
+  font-weight: 500;
+}
+.review .like i {
+  color: var(--color6);
+}
+.review .like button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ease;
+  background-color: #7121de;
+  color: #fff;
+}
+@media (max-width: 799px) {
+  h1 {
+    display: flex;
+    padding-top:3px;
+  }
+  .prt2 h2 {
+    display: none;
+  }
+  .artcle {
+    display: flex;
+    padding: 20px 40px 0 40px;
+  }
+    .images .image-group .small-image {
+        height: 113px
+    }
+    prt1{
+        width: 51%;
+    }
+    .images a {
+        height: 107px;
+        bottom: 20px;
+        right: -16px;
+    }
+}

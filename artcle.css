@@ -1,0 +1,164 @@
+h1 {
+  display: none;
+}
+/**/
+.hidep {
+  display: none;
+}
+/**/
+.artcle {
+  padding: 80px 80px 0 80px;
+}
+.artcle .wrapper h2 {
+  color: var(--color9);
+  font-weight: 500;
+  text-align: left;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+.artcle .wrapper p {
+  color: var(--color7);
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.artcle .images {
+  float: left;
+  margin-right: 40px;
+}
+/**/
+.review {
+  background: var(--color3);
+  margin: 20px 80px;
+  display: flex;
+  padding: 23px;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+.review .like,
+.review .author {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.review .author span {
+  font-size: 18px;
+}
+.review .author img {
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.review .like {
+  color: var(--color7);
+  font-weight: 500;
+}
+.review .like i {
+  color: var(--color6);
+}
+.review .like button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ease;
+  background-color: #7121de;
+  color: #fff;
+}
+/**/
+.images {
+  float: left;
+  width: 340px;
+  position: relative;
+}
+.images #main-img {
+  aspect-ratio: 5/7;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.images .image-group {
+  display: flex;
+  gap: 6px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  margin-top: 2px;
+}
+.images .image-group .small-image {
+  cursor: pointer;
+  width: 81.3px;
+  aspect-ratio: 5/7;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.images .image-group::-webkit-scrollbar {
+  width: 0;
+}
+.images a {
+  background: var(--color4);
+  border: none;
+  position: absolute;
+  right: -15px;
+  bottom: 20px;
+  height: 116px;
+  width: 12px;
+  border-radius: 3px;
+  font-size: 18px;
+  color: var(--color7);
+  line-height: 116px;
+  padding-left: 2px;
+}
+@media (max-width: 799px) {
+  h1 {
+    display: flex;
+    padding-top: 3px;
+  }
+  .artcle {
+    padding: 20px 40px;
+  }
+  .artcle .wrapper h2 {
+    display: none;
+  }
+  .review {
+    margin: 10px 40px;
+  }
+}
+@media (max-width: 477px) {
+  h1 {
+    font-size: 26px;
+    margin: 22px;
+  }
+  .artcle {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .images {
+    width: 100%;
+  }
+  .images .image-group {
+    column-gap: 7px;
+  }
+  .images .image-group .small-image {
+    height: 105px;
+  }
+  .images a {
+    bottom: 17px;
+    height: 105px;
+  }
+  .review {
+    margin: 30px;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    border-radius: 6px;
+  }
+  .review .like,
+  .review .author {
+    padding: 32px 0 0 0;
+  }
+  .review .like {
+    margin-bottom: 23px;
+  }
+}

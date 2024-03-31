@@ -1,0 +1,159 @@
+#page-headder {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-position: 52%;
+  background-image: url("mountain.png");
+}
+#page-headder p {
+  font-size: 20px;
+  margin: 15px 0 20px 0;
+  font-weight: 500;    
+  color: var(--color2);
+}
+#page-headder h2 {
+  color: var(--color1);
+  font-size: 48px;
+  line-height: 64px;
+}
+#contact-deatails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+#contact-deatails .details {
+  width: 40%;
+}
+#form-details form span,
+#contact-deatails .details span {
+  font-size: 14px;
+  color: var(--color7);
+}
+#form-details form h2,
+#contact-deatails .details h2 {
+  font-size: 25px;
+  line-height: 35px;
+  padding: 20px 0;
+  color: var(--color7);
+}
+#contact-deatails .details h3 {
+  font-size: 17px;
+  padding-bottom: 15px;
+}
+#contact-deatails .details li {
+  display: flex;
+  list-style: none;
+  padding: 10px 0;
+}
+#contact-deatails .details li i {
+  font-size: 16px;
+  padding-right: 22px;
+}
+#contact-deatails .details li p {
+  margin: 0;
+  font-size: 15px;
+}
+#contact-deatails .map {
+  width: 55%;
+  height: 400px;
+}
+#contact-deatails .map iframe {
+  width: 100%;
+  height: 100%;
+}
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid var(--color10);
+  border-radius: 10px;
+}
+#form-details button {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 4px;
+  transition: 0.2s ease;
+  background-color: #088178;
+}
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#form-details form textarea,
+#form-details form input {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid var(--color1);
+  resize: none;
+}
+#form-details .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+#form-details .people div img {
+  width: 65px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 50%;    
+}
+#form-details .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+#form-details .people div span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+@media (max-width: 799px) {
+  #contact-deatails {
+    padding: 40px;
+  }
+
+  #form-details {
+    padding: 40px;
+  }
+  #form-details form {
+    width: 50%;
+  }
+}
+@media (max-width: 477px) {
+  #contact-deatails {
+    flex-direction: column;
+  }   
+  #form-details form,
+  #contact-deatails .map,
+  #contact-deatails .details {
+    width: 100%;
+  }
+  #form-details {
+    margin: 14px;
+    padding: 30px 13px;
+    flex-wrap: wrap;
+  }
+  #form-details form {
+    margin-bottom: 20px;
+  }
+  #contact-deatails .map {
+    margin-top: 15px;  
+  }
+}

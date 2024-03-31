@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .images {
+        width: 340px;
+        position: relative;
+      }
+      .images #main-img {
+        aspect-ratio: 5/7;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .images .image-group {
+        display: flex;
+        gap: 6px;
+        overflow-x: scroll;
+        margin-top: 2px;
+      }
+      .images .image-group .small-image {
+        cursor: pointer;
+        width: 81.3px;
+        aspect-ratio: 5/7;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .images .image-group::-webkit-scrollbar {
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="images">
+      <img src="ravanaFalls/pic1.jpg" width="100%" id="main-img" />
+      <div class="image-group">
+        <div class="small-image">
+          <img src="ravanaFalls/pic1.jpg" width="100%" class="small-image" />
+        </div>
+        <div class="small-image">
+          <img src="ravanaFalls/pic2.jpeg" width="100%" class="small-image" />
+        </div>
+        <div class="small-image">
+          <img src="ravanaFalls/pic3.jpeg" width="100%" class="small-image" />
+        </div>
+        <div class="small-image">
+          <img src="ravanaFalls/pic4.jpg" width="100%" class="small-image" />
+        </div>
+        <div class="small-image" id="last">
+          <img src="ravanaFalls/pic5.jpg" width="100%" class="small-image" />
+        </div>
+      </div>
+      <a href="#last"><i class="fa fa-caret-right"></i></a>
+    </div>
+    <script>
+      let mimg = document.querySelector("#main-img");
+      let imgs = document.querySelectorAll(".small-image");
+      imgs.forEach((img) => {
+        img.addEventListener("click", () => {
+          mimg.src = img.src;
+        });
+      });
+    </script>
+  </body>
+</html>

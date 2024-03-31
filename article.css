@@ -1,0 +1,144 @@
+#page-headder {
+  background-image: url("beach.jpg");
+}
+#page-headder p {
+  font-size: 20px;
+  margin: 15px 0 20px 0;
+  font-weight: 500;
+  color: var(--color1);
+}
+#page-headder h2 {
+  color: var(--color1);
+  font-size: 48px;
+  line-height: 64px;
+}
+h1 {
+  margin: 30px 0 12px 50px;
+  color: var(--color9);
+  font-weight: 400;
+  text-align: left;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+form input {
+  height: 3rem;
+  width: 25rem;
+  padding: 0 1.25rem;
+  background: #f3f7f8;
+  border: 1px solid var(--color8);
+  border-radius: 2rem 0 0 2rem;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 2px 2px 7px #c97676;
+  border: none;
+}
+form input::placeholder {
+  color: rgba(26, 13, 10, 0.43);
+}
+form button {
+  border: 1px solid;
+  font-size: 24px;
+  color: var(--color1);
+  border-radius: 0 2rem 2rem 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #7121de;
+  padding: 0px 28px;
+  height: 3.1rem;
+  box-shadow: 2px 2px 7px #c97676;
+}
+form input:active ~ .sggts,
+form input:focus ~ .sggts {
+  display: flex;
+}
+form .sggts {
+  z-index: 980;
+  position: absolute;
+  display: none;
+  transform: translate(0, 140px);
+  flex-direction: column;
+  width: 28rem;
+  margin: 15px auto;
+  border-radius: 1rem 0.5rem 0.5rem 1rem;
+  max-height: 200px;
+  overflow-y: scroll;
+  box-shadow: 2px 2px 7px #c97676, -3px -2px 9px #c9a9a9;
+  background: var(--color1);
+}
+form .sggts::-webkit-scrollbar {
+  width: 9px;
+}
+form .sggts span {
+  min-height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid rgb(133, 121, 121);
+  color: var(--color8);
+  font-weight: 500;
+  padding-left: 20px;
+}
+form .sggts span:last-child {
+  margin-bottom: 0px;
+}
+form .sggts::-webkit-scrollbar-track {
+  background: var(--color3);
+  border-radius: 0 2rem 2rem 0;
+}
+form .sggts::-webkit-scrollbar-thumb {
+  background: #7121de;
+  border-radius: 0 2rem 2rem 0;
+}
+.flist h2 {
+  margin: 0 0 0 50px;
+  color: var(--color9);
+  font-weight: 500;
+  text-align: left;
+  font-size: 32px;
+}
+.flist .hiro {
+  text-align: left;
+  margin: 0 0 0 50px;
+  color: var(--color10);
+}
+.flist button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ease;
+  background-color: #7121de;
+  color: #fff;
+  margin-top: 32px;
+}
+.flist {
+  margin-top: -33px;
+}
+@media (max-width: 799px) {
+  .flist h2,
+  .flist .hiro {
+    margin: 0 0 0 20px;
+  }
+}
+@media (max-width: 477px) {
+  form .sggts {
+    width: 84%;
+  }
+  form input {
+    width: 65%;
+  }
+  .flist {
+    margin-top: -13px;
+  }
+  h1 {
+    margin: 24px;
+  }
+}
